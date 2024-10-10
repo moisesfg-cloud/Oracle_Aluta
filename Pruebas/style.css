@@ -1,0 +1,129 @@
+body{
+    background-color: gray;
+}
+
+#titulo{
+    color: blueviolet;
+}
+
+/*DE ESTA MANERA LE ASGINAMOS A TODAS LAS ETIQUETAS DE P QUE
+ TENGAN COMO CLASE "PARRAFO" SE LES AGREGUE LA MISMA CONFIGURACION*/
+
+p.parrafo{
+    color: brown;
+}
+
+p.especial{ 
+    color: darkgoldenrod;
+}
+
+/*EN TODAS LAS ETIQUETAS DE DIV QUE CONTENGA <P> 
+AGREGALES TAL CONFIGURACION*/
+
+div p{/*CORRESPONDE A  <p>Hola amigos felices</p>*/
+    color: gold;
+
+}
+
+/*DE ESTA MANERA LE AGREGAMOS LA MISMA CONFIGURACION A DOS ETIQUETAS 
+QUE SE ENCUENTRAN DENTRO DE DIV*/
+
+div h2, h3{
+    color: chartreuse;
+}
+/*SELECTOR UNIVERSAL, NOS PERMITE SELECCIONAR TODOS LOS ELEMENTOS 
+QUE TENEMOS DENTRO DEL ARCHIVO*/
+
+*{ 
+    font-size: 25px;
+    color: black;
+}
+
+/*RECORDEMOS QUE LOS CAMBIOS DE COLOR O ALGUN OTRO TIPO DE CAMBIO 
+SOLO SE APLICARA A LAS ETIQUETAS QUE NO ESTEN DEFINIDAS CON ALGUNA CARACTERISTICA*/
+
+
+/*COMO INDICAR COLORES
+HEXADECIMAL
+1 : color: #000000
+Los primeros dos equivalen al rojo
+Los de enmeido dos equivalen al verde
+Los dos ultimos equivalen al azul
+
+
+2 : #FFF
+Primera letra equivale al rojo
+Segunda letra equivale al verde
+Tercera letra equovale al azul
+*/
+/*.color{
+    color: #f00;
+}
+*/
+/* AQUI VEMOS LA MEZLCA DE COLORES QUE PODEMOS REALIZAR 
+SI SE UTILIZA EL METODO DE RGB PARA ASIGANR UN COLOR
+.color{
+    color: rgb(red, green, blue);
+}
+*/
+/* h1{
+    color: deeppink;
+}
+ */
+
+
+/*ASIGANIACION DE BORDES*/
+
+div h2{ /*CORRESPONDE A  <h2>Soy un subtitulo</h2>*/
+    /*color: coral;*/
+    border: 10px;
+    border-style:solid ;
+    border-bottom-left-radius: 5px;
+    border-color: blueviolet;
+    border-radius: 15px;
+    border-width: 10px; /*Ancho del borde*/
+}   
+
+div h3{/*CORRESPONDE A <h3>Soy un mini subtitulo</h3>*/
+    /*color: blue;*/
+    border: 10px;
+    border-style: groove; /*ESTA LINEA AGREGA EL ESTILO DE BORDE*/
+    border-color: aqua; /*ESTA LINEA LE AGREGA UN COLOR AL BORDE*/
+    border-radius: 5px; /*ESTA LINEA LE AGREGA UNA FORMA AL BORDE*/
+    border-width: 2rem; /*Ancho del borde*/
+}
+
+/*TIPOS DE BORDES con border-style:
+    dotted
+    dashed
+    solid
+    --- Propiedades ---
+    groove            |
+    ridge             |
+    inset             |
+    outset            |
+    --- Tridimencional-
+    none -> nada
+    hidden
+*/
+
+#fondo{/*Para seleccionar los ID se debe de poner el simbolo #*/
+    /*background-color: rgba(255, 0, 0,0); */
+    /*opacity: 3.6; /*Le da una opacidad al elemento completo*/
+    height: 200px; /*ALTO DE LA IMAGEN*/
+    /*background-image: url('coffee.png');De esta manera mediante la URL conectamos a la imagen con el codigo en css*/
+    
+        /*
+        auto -> Te ajusta de manera automatica la imagen
+        cover ->
+        contain -> Lo ajusta como un contenedor
+        */
+    /* background-repeat: repeat-y;
+    background-position: center top; */
+    background: #f00 url('coffee.png') repeat-y center bottom / 100px 100px; /*Esta es la manera mas facil de poder codificar todo lo que pueda estar dentro de 
+    background*/
+
+    
+    
+}
+

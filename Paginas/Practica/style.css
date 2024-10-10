@@ -1,0 +1,157 @@
+/*Esto es un selector de tipo */
+h2 { 
+  color: blue;
+  font-size: 70px;
+  font-family: "Sankofa Display", sans-serif;
+}
+
+h3 {
+	color: orange;
+	font-size: 25px;
+}
+
+p {
+	color: cornflowerblue;
+}
+
+/*PARA APLICAR EL MISMO ESTILO A TRES ELEMENTOS*/
+p,
+ul,
+ol {
+	font-size: 22px;
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+}  
+
+
+/*Formateo de imagenes*/
+
+img{
+	width: 200px ; /*Ancho*/
+}
+
+.gato_acostado{
+	width: 300px;
+	border-width: 10px; /*TAMAÑO DEL BORDE*/
+	border-color:red; /*COLOR DEL BORDE*/
+	border-style: solid dashed dotted ; /*ESTILO DEL BORDE*/
+	border-radius: 50%; /*CURVA EN LAS ESQUINAS*/
+}
+
+
+/*SELECTOR UNIVERSAL es este "*" y aplica los cambios a todos los elementos del archivo*/
+/*
+*{
+	color:red;
+*/
+
+/*SELECTOR DE CLASE, onsiste en generar una clase dentro de HTML otorgando un nombre y para agregar el styilo sera necesario que lleve antes un "." EJEMPLO: .futbol*/
+.lista_no_ordenada{
+	color: red;
+}
+
+/*SELECTOR POR ID*/
+#app-de-gatos {
+	color: green;
+	font-size: 90px;
+}
+
+/*DIV*/
+div {
+	background-color: lightskyblue;
+}
+
+
+/*PADDING - HACE REFERENCIA A LA DISTANCIA ENTRE LOS BORDES*/
+
+/*COMO OTORGAR UN PADDING POR LADO*/
+.escudo_pl{
+	width: 400px;
+	margin: 20px;/*MARGEN*//*AJUSTA MARGEN
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+ 	*/
+	border-width: 10px;
+	border-color: bisque;
+	border-style: solid;
+	background-color: black;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+	padding-top: 10px;/*PARTE SUPERIOR
+	padding-left: 10%;
+	padding-right: 5%;
+	padding-bottom: 15%; /*PARTE INFERIOR*/
+}
+
+/*SELECTORES DE ATRIBUTOS*/
+
+img[alt] { 
+	border-radius: 50%;
+}
+
+[type="radio"]{
+	margin: 5px;
+	
+}
+[type="checkbox"]{
+	margin: 10px;
+}/*CON ESTA LINEA DE CODIGO SELECCIONAMOS TODOS LOS CHECKBOX QUE HAY DENTRO DE LA PAGINA*/
+
+a[href="https://www.linkedin.com/in/moises-feria-garcia211127/"]{
+	font-size: 30px;
+	margin: 10px;
+	text-decoration: none; /*DECORACION DE TEXTO*/
+	font-weight: bold; /*PESO DE LA FUENTA, NEGRITA*/
+} /*CON ESTAS LINEAS DE CODIGO ESTAMOS SELECCIONANDO LOS ENLACES*/
+
+/*UNIDADES ABSOLUTAS Y RELATIVAS*/
+/*UNIDADES EN CSS
+PIXELES ABSOLUTA ESPECIFICA EL VALOR
+VW/VIEWPORT  RELATIVAS, RELATIVAS A OTROS VALORES, DEPENDE DEL TAMAÑO DE LA PANTALLA (BROWSER) ESTE SIRVE PARA QUE SEA ADAPTABLE YA SEA EN UN CELULAR O LAPTOP
+EM/ DEPENDE DEL TAMAÑO DE LA LETRA DEL CONTENEDOR
+REM/ TAMAO DE LA LETRA DEL ELEMENTO RAIZ
+ 
+*/
+
+/*APLICAR STILO A BODY*/
+body {
+	background-color: silver;
+	font: family 10px; ;
+} 
+/*EL ID TIENE MAS PRIORIDAD QUE LA CLASE*/
+/*SI EL ESTILO ESTA EN LINEA DE CODIGO SE PRIORIZA ANTE TODO*/
+
+/*CODIGO HEXADECIMAL COLORES BASE 16 */
+
+/* #  00  00  00 
+	ROJO VERDE AZUL
+*/
+
+img {
+	border-radius: 50%;
+	border-width: 3px;
+	color: #07ab34;
+}
+
+/*CODIGO HEXADECIMAL COLORES A 3 DIGITOS*/
+/* #000
+   #fff
+   #0f0
+   #f0f
+*/
+
+/*
+rgb(0, 255, 255)
+*/
+
+/* --escudo
+	var (--escudo)
+/ ASI SE CREAN LAS VARIABLES EN CSS*/
+
+/*A ESTO SE LE LLAMA UN VALOR DE RESPALDO*/
+
+.escudo_pl{
+	background:black;
+	background: : var(--escudo, black )
+}
+ 
